@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Formularz</title>
+</head>
+<body>
+    <div class="kontener">
+        <header>
+            <div class="naglowek">
+                <h1>Rekrutacja</h1>
+                <p>PŁATNY STAŻ NA STANOWISKO PROGRAMISTA</p>
+            </div>
+        </header>
+        <main>
+            <form action="mailto:abc@gmail.com" method="post">
+                <label>Podaj imię</label>
+                <input type="text" placeholder="Podaj imię*" required>
+                <input type="text" placeholder="Podaj drugie imię*" required>
+                <input type="text" placeholder="Podaj nazwisko*" required>
+                <input type="email" placeholder="Podaj adres e-mail*" required>
+                <input type="text" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$" placeholder="Podaj numer telefonu*" required>
+                <input type="text" placeholder="Podaj Miasto*" required>
+                <input type="text" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$" placeholder="Podaj kod pocztowy*" required>
+                <input type="password" placeholder="Podaj hasło*" required>
+                <label>Ilość osób na staż. *</label>
+                <input type="number" required max="10" min="1">
+                <select>
+                    <option>Mężczyzna</option>
+                    <option>Kobieta</option>
+                    <option disabled selected>Podaj płeć</option>
+                </select>
+                <textarea cols="30" rows="10" placeholder="Napisz cos o sobie"></textarea>
+                <input type="url" placeholder="Podaj adres twojej strony www *" required>
+                <label >Załącz swoje CV</label>
+                <input type="file" placeholder="Załącz swoje CV">
+                <label >Dodaj list motywacyjny</label>
+                <input type="file" placeholder="Dodaj list motywacyjny">
+                <label>Twoja znajomo technologii*</label>
+                <select>
+                    <option disabled selected>-powiedz prawde-</option>
+                    <optgroup label="Poziom podstawowy">
+                        <option>5%</option>
+                        <option>10%</option>
+                        <option>15%</option>
+                        <option>25%</option>
+                        
+                    </optgroup>
+                    <optgroup label="Poziom średni">
+                        <option>30%</option>
+                        <option>40%</option>
+                        <option>50%</option>
+                        <option>60%</option>
+                        <option>70%</option>
+                    </optgroup>
+                    <optgroup label="Poziom wysoki">
+                        <option>80%</option>
+                        <option>90%</option>
+                    </optgroup>
+                    <optgroup label="Poziom mistrzowski">
+                        <option>100%</option>
+                    </optgroup>
+                </select>
+                <label>Jakie języki programowania znasz?</label>
+                <div class="klasa">
+                <input type="radio" name="1">sadsadadsa
+                </div>
+                <input type="submit">
+            </form>
+        </main>
+    </div>
+</body>
+</html>
